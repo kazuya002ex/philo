@@ -37,7 +37,7 @@
 
 - サーバのデフォルト値
 
-http://localhost:3000
+http://localhost:3071
 
 
 ## RSpecの実行
