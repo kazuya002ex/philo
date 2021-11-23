@@ -1,24 +1,51 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## philo(Mushikuiサーバー)
 
-Things you may want to cover:
+## Setup
 
-* Ruby version
+```
+  # このリポジトリをローカルに取り込む
+  git clone https://github.com/kazuya002ex/philo.git
 
-* System dependencies
+  # dockerのセットアップ方法
 
-* Configuration
+  # コンテナをbuildする
+  docker-compose build
 
-* Database creation
+  # コンテナを起動
+  docker-compose up -d
 
-* Database initialization
+  # DBを作成する
+  docker-compose run web rails db:create db:migrate
+```
 
-* How to run the test suite
+- DBに変更があった場合
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+  # 現在のDBを削除し、DBを再構築する
+  docker-compose run web rails db:migrate:reset
 
-* Deployment instructions
+  # 開発データを投入する
+  docker-compose run web rails db:seed
 
-* ...
+  # Gemfileの変更を取り込む
+  docker-compose build
+```
+
+## サーバアクセス
+
+- サーバのデフォルト値
+
+http://localhost:3000
+
+
+## RSpecの実行
+
+```
+docker-compose run web rspec
+
+# dockerコンテナ内で実行
+docker-compose run web --rm web bash
+rspec
+```
