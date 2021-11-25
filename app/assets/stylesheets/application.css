@@ -55,6 +55,28 @@ a:hover {
   color: rgb(169, 204, 255);
 }
 
+input,
+button,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  outline: none;
+}
+
+input[type='submit'],
+input[type='button'],
+label,
+button,
+select {
+  cursor: pointer;
+}
+
 /* header */
 
 .header-wrapper {
@@ -69,11 +91,37 @@ a:hover {
 
 /* footer */
 .footer-copylight {
-  margin-top: 3%;
+  margin-top: 9%;
   text-align: center;
 }
 
 .footer-copylight p {
   font-size: 0.89rem;
   font-weight: 900;
+}
+
+/* top#index */
+
+.top-index-wrapper {
+  margin: 5% 15%;
+  text-align: center;
+  padding-bottom: 8%;
+}
+
+.top-index-title {
+  margin-bottom: 1.75%;
+}
+
+.top-index-title h2 {
+  font-size: 1.75rem;
+}
+
+.top-index-wrapper input[type="submit"] {
+  margin-top: 2%;
+  font-size: 0.93rem;
+  background-color: rgb(109, 133, 241);
+  color: #fefefe;
+  padding: 1% 3%;
+  border-radius: 6px;
+  margin-left: 11%;
 }
