@@ -66,3 +66,14 @@ a:hover {
   font-size: 1.1rem;
   font-weight: 800;
 }
+
+/* footer */
+.footer-copylight {
+  margin-top: 3%;
+  text-align: center;
+}
+
+.footer-copylight p {
+  font-size: 0.89rem;
+  font-weight: 900;
+}
