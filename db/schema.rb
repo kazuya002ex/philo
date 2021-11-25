@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_23_131255) do
+ActiveRecord::Schema.define(version: 2021_11_25_135855) do
 
   create_table "pit_blocks", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.bigint "pit_document_id", null: false
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2021_11_23_131255) do
     t.string "image", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "uuid"
   end
 
   add_foreign_key "pit_blocks", "pit_documents"
