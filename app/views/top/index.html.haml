@@ -1,1 +1,12 @@
-%h1 Helllllllll
+.btn-wrap
+  %button#modalOpen.top-confirm-button 確認
+#easyModal.top-modal
+  .top-modal-content
+    .top-modal-header
+      %p 確認画面
+    .top-modal-body
+      .top-modal-item
+        %iframe{ src: "https://s3-ap-northeast-1.amazonaws.com/cdn.aprico-media.com/resources/sample.pdf" }.top-pdf-flame
+      .top-modal-action-btns
+        %span.modalClose 戻る
+        %button.top-modal-start-btn 開始
