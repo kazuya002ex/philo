@@ -94,7 +94,8 @@ body {
 }
 
 .top-pdf-flame {
-  height: 100%;
+  width: 400px;
+  height: calc(100% - 10px);
 }
 
 .top-modal-action-btns {
