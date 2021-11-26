@@ -66,8 +66,6 @@ body {
   to {opacity: 1}
 }
 
-
-
 .top-modal-header {
   background: lightcoral;
   padding: 3px;
@@ -77,20 +75,6 @@ body {
   color: #f4f4f4;
   text-align: center;
   font-size: 2rem;
-}
-
-.modalClose {
-  color: blue;
-  text-decoration: underline;
-  font-size: 12px;
-  display: flex;
-  align-items: center;
-}
-
-.modalClose:hover {
-  color: red;
-  cursor: pointer;
-  text-decoration: none;
 }
 
 .top-modal-body {
@@ -116,6 +100,20 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+
+.top-modal-close {
+  color: blue;
+  text-decoration: underline;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.top-modal-close:hover {
+  color: red;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .top-modal-start-btn {
