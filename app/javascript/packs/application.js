@@ -13,28 +13,27 @@ Turbolinks.start()
 ActiveStorage.start()
 
 document.addEventListener("DOMContentLoaded", function(){
-  const buttonOpen = document.getElementById('modalOpen');
-  const modal = document.getElementById('easyModal');
-  const buttonClose = document.getElementsByClassName('modalClose')[0];
+  const topModalOpenButton = document.getElementById('top-modal-open');
+  const topModal = document.getElementById('top-modal');
+  const topModalCloseButton = document.getElementsByClassName('top-modal-close')[0];
 
   //ボタンがクリックされた時
-  buttonOpen.addEventListener('click', modalOpen);
-  function modalOpen() {
-    console.log("aaa");
-    modal.style.display = 'block';
+  topModalOpenButton.addEventListener('click', topModalOpen);
+  function topModalOpen() {
+    topModal.style.display = 'block';
   };
 
   //戻るがクリックされた時
-  buttonClose.addEventListener('click', modalClose);
+  topModalCloseButton.addEventListener('click', modalClose);
   function modalClose() {
-    modal.style.display = 'none';
+    topModal.style.display = 'none';
   };
 
   //モーダルコンテンツ以外がクリックされた時
   addEventListener('click', outsideClose);
   function outsideClose(e) {
-    if (e.target == modal) {
-      modal.style.display = 'none';
+    if (e.target == topModal) {
+      topModal.style.display = 'none';
     };
   };
 }, false);
