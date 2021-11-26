@@ -54,7 +54,8 @@ body {
 .top-modal-content {
   background-color: #f4f4f4;
   margin: 12.5vh auto;
-  width: 50%;
+  width: 80%;
+  max-width: 700px;
   height: 75vh;
   box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
   animation-name: modalopen;
@@ -107,7 +108,7 @@ body {
   text-decoration: underline;
   font-size: 12px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .top-modal-close:hover {
