@@ -3,7 +3,12 @@
     %h2 資料をアップロード
 
   // TODO: フォームをpit_documents#createにかける
-  %form
-    %input{ type: "file" }
+  -# %form
+  -#   %input{ type: "file" }
+  -#   %br
+  -#   %input{ type: "submit", value: "確認" }
+
+  = form_with model: @pit_document, local: true do |f|
+    = f.file_field :image
     %br
-    %input{ type: "submit", value: "確認" }
+    = f.submit '確認'

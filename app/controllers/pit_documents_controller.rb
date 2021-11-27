@@ -6,9 +6,10 @@ class PitDocumentsController < ApplicationController
   def create
     @pit_document = PitDocument.new(pit_document_params)
     # TODO: ランダムidを生成する
-    # @uuid = 
+    @uuid = SecureRandom.uuid
     @pit_document.uuid = @uuid
-    # TODO: cookieを生成
+    cookies[:document_uuid] = @uuid
+    pp cookies[:document_uuid]
     if @pit_document.save
       # TODO: trueの処理
     else
