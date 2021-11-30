@@ -12,3 +12,16 @@
     = f.file_field :image
     %br
     = f.submit '確認'
+
+.btn-wrap
+  %button#top-modal-open.top-confirm-button 確認
+#top-modal.top-modal
+  .top-modal-content
+    .top-modal-header
+      %p 確認画面
+    .top-modal-body
+      .top-modal-item
+        %iframe.top-pdf-flame{ src: "https://s3-ap-northeast-1.amazonaws.com/cdn.aprico-media.com/resources/sample.pdf" }
+      .top-modal-action-btns
+        %span.top-modal-close 戻る
+        %button.top-modal-start-btn 開始
