@@ -1,1 +1,10 @@
-%h1 資料確認ページ
+.pit_documents-confirm-wrapper
+  .pit_documents-confirm-title
+    %h2 こちらでよろしいですか？
+
+.pit_documents-confirm-title-form-wrapper
+  .pit_documents-confirm-title-form
+
+.pit_documents-confirm-content-wrapper
+  .pit_documents-confirm-content
+    %embed{ src: @pit_document.image.url, type: 'application/pdf', width: '80%', height: '800px' }
