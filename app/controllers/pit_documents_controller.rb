@@ -1,15 +1,13 @@
 class PitDocumentsController < ApplicationController
   before_action :set_confirm_pit_document, only: %i(confirm)
+  before_action :set_uuid, only: %i(create)
 
   def new
   end
 
   def create
     @pit_document = PitDocument.new(pit_document_params)
-    @uuid = SecureRandom.uuid
-    @pit_document.uuid = @uuid
-    cookies[:document_uuid] = @uuid
-    pp cookies[:document_uuid]
+    @pit_document.uuid = cookies[:document_uuid]
     if @pit_document.save
       # TODO: 仮のリダイレクト
       redirect_to confirm_path
@@ -33,5 +31,9 @@ class PitDocumentsController < ApplicationController
   def set_confirm_pit_document
     pit_document_uuid = cookies[:document_uuid]
     @pit_document = PitDocument.find_by(uuid: pit_document_uuid)
+  end
+
+  def set_uuid
+    cookies[:document_uuid] = SecureRandom.uuid
   end
 end
