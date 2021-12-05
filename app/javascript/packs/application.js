@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function(){
     // };
   // }
 
+
   const topModalOpenButton = document.getElementById('top-modal-open');
   const topModal = document.getElementById('top-modal');
   const topModalCloseButton = document.getElementsByClassName('top-modal-close')[0];
