@@ -1,5 +1,5 @@
 class PitDocumentsController < ApplicationController
-  before_action :set_confirm_pit_document, only: %i(confirm)
+  before_action :set_confirm_pit_document, only: %i(new)
   before_action :set_uuid, only: %i(create)
 
   def new
@@ -16,9 +16,6 @@ class PitDocumentsController < ApplicationController
   end
 
   def show
-  end
-
-  def confirm
   end
 
   private
