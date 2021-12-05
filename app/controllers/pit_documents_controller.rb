@@ -7,7 +7,6 @@ class PitDocumentsController < ApplicationController
 
   def create
     @pit_document = PitDocument.new(pit_document_params)
-    pp @pit_document
     @pit_document.uuid = cookies[:document_uuid]
     if @pit_document.save
       redirect_to new_pit_document_path
