@@ -2,7 +2,7 @@
   .top-index-title
     %h2 資料をアップロード
   = form_with model: @pit_document, local: true do |f|
-    = f.file_field :image, onchange: "previewImage(this)"
+    = f.file_field :image, onchange: "previewImage(this);", id: "file"
     %br
 
     .btn-wrap
