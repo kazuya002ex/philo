@@ -10,8 +10,7 @@ class PitDocumentsController < ApplicationController
     pp @pit_document
     @pit_document.uuid = cookies[:document_uuid]
     if @pit_document.save
-      # TODO: 仮のリダイレクト
-      redirect_to confirm_path
+      redirect_to new_pit_document_path
     else
       # TODO: falseの処理
     end
