@@ -1,0 +1,8 @@
+ja:
+  activerecord:
+    models:
+      pit_document: 資料
+    attributes:
+      pit_document:
+        title: タイトル
+        image: 画像またはPDF

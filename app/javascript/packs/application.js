@@ -13,13 +13,28 @@ Turbolinks.start()
 ActiveStorage.start()
 
 document.addEventListener("DOMContentLoaded", function(){
+  // function check(){
+    // var file = document.getElementById('file')
+    // if(!file.UPLOADFILE.value) {
+    //   alert("設定されていません");
+    //   return
+    // };
+  // }
+
+
   const topModalOpenButton = document.getElementById('top-modal-open');
   const topModal = document.getElementById('top-modal');
   const topModalCloseButton = document.getElementsByClassName('top-modal-close')[0];
+  const file = document.getElementById('file')
 
   //ボタンがクリックされた時
   topModalOpenButton.addEventListener('click', topModalOpen);
   function topModalOpen() {
+    if(!file.value) {
+      alert("ファイルが設定されていません");
+      return
+    };
+
     topModal.style.display = 'block';
   };
 
