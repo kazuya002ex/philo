@@ -1,3 +1,129 @@
 // Place all the styles related to the Top controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+* {
+  margin : 0 auto;
+  padding : 0;
+}
+
+body {
+  font-family: serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.btn-wrap {
+  width: 100%;
+  margin-top: 3%;
+}
+
+.top-confirm-button {
+  display: block;
+  background: lightcoral;
+  color: #fff;
+  padding: 0 2em;
+  border: none;
+  margin: 0 auto;
+  width: 250px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 32px;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.top-confirm-button:hover {
+  background: lightblue;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.top-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.top-modal-content {
+  background-color: #f4f4f4;
+  margin: 12.5vh auto;
+  width: 80%;
+  max-width: 700px;
+  height: 75vh;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+
+@keyframes modalopen {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+.top-modal-header {
+  background: lightcoral;
+  padding: 3px;
+}
+
+.top-modal-header p {
+  color: #f4f4f4;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.top-modal-body {
+  height: calc(100% - 54px);
+  padding: 10px 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-modal-item {
+  height: 90%;
+}
+
+.top-pdf-flame {
+  width: 400px;
+  height: calc(100% - 10px);
+}
+
+.top-modal-action-btns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.top-modal-close {
+  color: blue;
+  text-decoration: underline;
+  font-size: 12px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.top-modal-close:hover {
+  color: red;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.top-modal-start-btn {
+  width: 100px;
+  height: 40px;
+
+  border: none;
+  background: lightcoral;
+  color: #f4f4f4;
+}
