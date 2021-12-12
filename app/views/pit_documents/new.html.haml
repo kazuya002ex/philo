@@ -7,4 +7,5 @@
 
 .pit_documents-confirm-content-wrapper
   .pit_documents-confirm-content
-    %embed{ src: @pit_document.image.url, type: 'application/pdf', width: '80%', height: '800px' }
+    - pp @pit_document.image_url
+    %img{ src: @pit_document.image_url.to_s.gsub(/pdf/, 'png'), width: '80%', height: '800px' }

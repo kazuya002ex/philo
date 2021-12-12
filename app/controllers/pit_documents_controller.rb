@@ -8,7 +8,8 @@ class PitDocumentsController < ApplicationController
   def create
     @pit_document = PitDocument.new(pit_document_params)
     @pit_document.uuid = cookies[:document_uuid]
-    if @pit_document.save
+
+    if @pit_document.save!
       redirect_to new_pit_document_path
     else
       redirect_to root_path
@@ -31,5 +32,15 @@ class PitDocumentsController < ApplicationController
 
   def set_uuid
     cookies[:document_uuid] = SecureRandom.uuid
+  end
+
+  def convert_pdf_to_png(file_name)
+    pit_document_image = PitDocument.find_by(image: file_name)
+    images = Magick::Image.read(pit_document_image)
+    file_name.delete!('.pdf')
+
+    pp images[0]
+
+    # images[0].write(file_name + ".png")
   end
 end
