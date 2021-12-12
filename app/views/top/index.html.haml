@@ -1,8 +1,8 @@
 .top-index-wrapper
   .top-index-title
     %h2 資料をアップロード
-  = form_with model: @pit_document, local: true do |f|
-    = f.file_field :image, html: { multipart: true }, onchange: "previewImage(this);", id: "file"
+  = form_with model: @pit_document, html: { multipart: true }, local: true do |f|
+    = f.file_field :pdf, onchange: "previewImage(this);", id: "file"
     %br
 
     .btn-wrap
