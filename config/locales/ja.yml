@@ -5,4 +5,4 @@ ja:
     attributes:
       pit_document:
         title: タイトル
-        image: 画像またはPDF
+        pdf: 画像またはPDF
