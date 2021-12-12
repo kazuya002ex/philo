@@ -22,7 +22,7 @@ class PitDocumentsController < ApplicationController
   private
 
   def pit_document_params
-    params.require(:pit_document).permit(:title, :image)
+    params.require(:pit_document).permit(:title, :pdf, :picture)
   end
 
   def set_confirm_pit_document
