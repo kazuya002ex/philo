@@ -1,3 +1,14 @@
 // Place all the styles related to the PitDocuments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.pit_documents-new-rapper {
+    margin: 0 8%;
+}
+
+.pit_documents-new-rapper .pit_documents-new-title h2 {
+    margin-top: 1.5%;
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-align: center;
+}
