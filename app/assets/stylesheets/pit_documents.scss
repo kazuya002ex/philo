@@ -12,3 +12,20 @@
     font-weight: bold;
     text-align: center;
 }
+
+.pit_documents-new-buttons-wrapper {
+    margin: 4% 18% 5%;
+    display: flex;
+}
+
+.pit_documents-new-buttons-wrapper div {
+    margin-right: 8px;
+    background-color: #ff7b7b;
+    color: #eee;
+    padding: 7px 19px;
+    cursor: pointer;
+}
+
+.pit_documents-new-content-wrapper {
+    text-align: center;
+}
