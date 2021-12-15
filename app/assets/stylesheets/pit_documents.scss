@@ -1,3 +1,20 @@
 // Place all the styles related to the PitDocuments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.pit_documents-confirm-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.pit_documents-confirm-content{
+  width: 98%;
+  max-width: 1000px;
+  height: 800px;
+  margin: 12px auto;
+}
+
+.pit_documents-new-embed {
+  width: 100%;
+  height: 100%;
+}
