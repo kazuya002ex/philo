@@ -125,3 +125,44 @@ select {
   border-radius: 6px;
   margin-left: 11%;
 }
+
+
+/* pit_documents#new */
+
+.pit_documents-confirm-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.pit_documents-confirm-content{
+  width: 98%;
+  max-width: 1000px;
+  height: 800px;
+  margin: 12px auto 20px;
+}
+
+.pit_documents-new-embed {
+  width: 100%;
+  height: 100%;
+}
+
+.pit_documents-confirm-button {
+  display: block;
+  background: lightcoral;
+  color: #fff;
+  padding: 0 2em;
+  border: none;
+  margin: 0 auto;
+  width: 250px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 32px;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.pit_documents-confirm-button:hover {
+  background: lightblue;
+  cursor: pointer;
+  transition: .3s;
+}
