@@ -1,19 +1,12 @@
 .pit_documents-new-rapper
   .pit_documents-new-title
     %h2 資料作成ページ
+  .pit_documents-btn-wrap
+    %button#addPitBlockButton.pit_documents-confirm-button PitBlock作成
+    %button#removePitBlockButton.pit_documents-confirm-button PitBlock削除
+    // TODO:「編集を終了してもよろしいですか？」的なダイアログを出す
+    %button#finishEditButton.pit_documents-confirm-button 編集完了
 
-  .pit_documents-new-buttons-wrapper
-    .generate-button
-      %div PitBlock生成
-    .delete-button
-      %div PitBlock削除
-    .complete-button
-      // TODO:「編集を終了してもよろしいですか？」的なダイアログを出す
-      %div 編集完了
-
-  .pit_documents-new-title-form-wrapper
-    .pit_documents-new-title-form
-
-  .pit_documents-new-content-wrapper
-    .pit_documents-new-content
-      %img{ src: @pit_document.pdf_url, width: '80%', height: '800px' }
+.pit_documents-confirm-content-wrapper
+  .pit_documents-confirm-content
+    %embed.pit_documents-new-embed{ src: @pit_document.pdf.url, type: 'application/pdf', width: '80%', height: '800px' }
