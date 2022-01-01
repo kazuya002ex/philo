@@ -39,7 +39,7 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  isplay: block;
+  display: block;
 }
 
 body {
@@ -124,4 +124,63 @@ select {
   padding: 1% 3%;
   border-radius: 6px;
   margin-left: 11%;
+}
+
+
+/* pit_documents#new */
+
+.pit_documents-confirm-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.pit_documents-confirm-content{
+  width: 98%;
+  max-width: 1000px;
+  height: 800px;
+  margin: 12px auto 20px;
+}
+
+.pit_documents-new-embed {
+  width: 100%;
+  height: 100%;
+}
+
+.pit_documents-btn-wrap {
+  display: flex;
+  justify-content: space-around;
+  width: 96%;
+  max-width: 550px;
+  margin: 12px auto;
+}
+
+.pit_documents-confirm-button {
+  display: block;
+  background: lightcoral;
+  color: #fff;
+  padding: 0 2em;
+  border: none;
+  width: 32%;
+  max-width: 180px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: .3s;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.pit_documents-confirm-button:hover {
+  background: lightblue;
+  cursor: pointer;
+  transition: .3s;
+}
+
+@media (max-width: 575px) {
+  .pit_documents-confirm-button {
+    font-size: 18px;
+  }
 }
