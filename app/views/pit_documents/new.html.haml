@@ -1,14 +1,12 @@
-.pit_documents-confirm-wrapper
-  .pit_documents-confirm-title
+.pit_documents-new-rapper
+  .pit_documents-new-title
     %h2 資料作成ページ
   .pit_documents-btn-wrap
     %button#addPitBlockButton.pit_documents-confirm-button PitBlock作成
     %button#removePitBlockButton.pit_documents-confirm-button PitBlock削除
+    // TODO:「編集を終了してもよろしいですか？」的なダイアログを出す
     %button#finishEditButton.pit_documents-confirm-button 編集完了
-
-.pit_documents-confirm-title-form-wrapper
-  .pit_documents-confirm-title-form
 
 .pit_documents-confirm-content-wrapper
   .pit_documents-confirm-content
-    %embed.pit_documents-new-embed{ src: @pit_document.image.url, type: 'application/pdf', width: '80%', height: '800px' }
+    %embed.pit_documents-new-embed{ src: @pit_document.pdf.url, type: 'application/pdf', width: '80%', height: '800px' }
